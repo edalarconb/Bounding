@@ -12,7 +12,7 @@
 #' \deqn{Y0 P(Z=0\mid X)+E(Y\mid X,Z=1)P(Z=1\mid X)\leq E(Y\mid X)\leq Y1 P(Z=0\mid X)+E(Y\mid X,Z=1)P(Z=1\mid X)}
 #'
 #' In this function, the identification bounds for specific values for Y0 and Y1 are computed.
-#' @param database data frame containing the data.
+#' @param database data frame.
 #' @param X vector with the number of the columns in database that are used as covariates X. Must be of length 1 or 2.
 #' @param Y number of the column in database indicating the response variable.
 #' @param Z number of the column in database that indicates the binary variable Z in data.
@@ -23,7 +23,7 @@
 #' @param linkprob model used to estimate the probability \eqn{P(Z=1\mid X)}.
 #'
 #' @return
-#' \code{data.bounds} A data frame that contains the observed values of X and Y. Additionally it contains predicted values of Y, the probability of observing Y, and the lower and upper bounds.
+#' \code{data.bounds} A data frame that contains the observed values of X and Y. Additionally it contains predicted values of Y and the lower and upper bounds.
 #'
 #' \code{plot.bounds} A plot with the widest identification bounds.
 #'
